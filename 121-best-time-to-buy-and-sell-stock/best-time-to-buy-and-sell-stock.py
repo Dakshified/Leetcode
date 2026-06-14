@@ -3,10 +3,10 @@ class Solution:
         n = len(prices)
         min_price = prices[0]
         profit = 0
-        for i in range (1,n):
+        for i in range ( 1, n):
             curr_profit = prices[i] - min_price
             if curr_profit > profit:
                 profit = curr_profit
-            min_price = min (min_price, prices[i])
+            min_price = min(min_price, prices[i])
         return profit
         
